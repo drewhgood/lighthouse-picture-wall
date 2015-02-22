@@ -24,7 +24,11 @@ body {
      .member img {
       width: 200px;
       height: 200px;
-    }
+
+          &:hover {
+          border: 1px solid black;
+          }
+      }
 
      .member div.name {
       text-align: center;  

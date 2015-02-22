@@ -1,14 +1,21 @@
-$primaryColor: #FF0000;
+$primaryColor: #A6A6A7;
 
+$secondaryColor: #d0eaec;
+$altColor:#ff7373;
+
+*{
+  box-sizing: border-box;
+
+}
 
 body {
   font-family: Verdana;
   font-size: 1.5em;
+  color: $primaryColor;
 
    h1 {
     color: $primaryColor; 
   }
-
 }
 
 #team-members {
@@ -22,11 +29,23 @@ body {
     }
 
      .member img {
-      width: 200px;
-      height: 200px;
+        width: 200px;
+        height: 200px;
+        margin: 0 15px;
+        border-radius: 5%;
+        text-align: center;
+        border: 3px solid $altColor;
+        box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.23);
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        transition: all 0.8s ease;
 
           &:hover {
-          border: 1px solid black;
+              border-radius: 50%;
+              background-color: $secondaryColor;
+              border: none;
           }
       }
 
